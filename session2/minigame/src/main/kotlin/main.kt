@@ -29,10 +29,37 @@ fun challengeTwo(){
     val useranswer = readLine()
     if (useranswer == "LOW" && (1..3).contains(diceResults) ){
         println("winner")
+        challengeThree()
     } else if (useranswer == "HIGH" && (4..6).contains(diceResults)){
         println("winner")
+        challengeThree()
     } else {
         print("game over")
     }
 
+}
+
+fun challengeThree(){
+    println("Barry Allen really misses his mom and wants her back.")
+    println("what should he do")
+    println("1: he goes back and kills reverse flash before the event.")
+    println(" ")
+    println("2: he prevents the killing of his mother without murdering.")
+    println(" ")
+    println("3: he does nothing")
+    println(" ")
+    var input = readLine()
+    if (input == "1"){
+        println("killing Eobard Thawne does nothing as a new one appears and defeats him.")
+        println("game over")
+    } else if (input == "2"){
+        println("barry lives peacefully with his parents for a couple of years before he undoes his action")
+        println("winner")
+    } else if (input == "3"){
+        println("filled with guilt, barry falls in to a depression and stops fighting crime altogether")
+        println(" ")
+        println("! TimeFlash !")
+        println(" ")
+        challengeTwo()
+    }
 }
