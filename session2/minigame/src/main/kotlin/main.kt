@@ -15,7 +15,24 @@ fun challengeOne(){
 
     if (answer.contains(input)){
         println("correct")
+        challengeTwo()
     } else {
         println("incorrect")
     }
+}
+
+fun challengeTwo(){
+    println("guess the dice number")
+    println("choose LOW for numbers from 1 to 3")
+    println("choose HIGH for numbers from 4 to 6")
+    val diceResults = (1..6).random()
+    val useranswer = readLine()
+    if (useranswer == "LOW" && (1..3).contains(diceResults) ){
+        println("winner")
+    } else if (useranswer == "HIGH" && (4..6).contains(diceResults)){
+        println("winner")
+    } else {
+        print("game over")
+    }
+
 }
