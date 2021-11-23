@@ -1,0 +1,108 @@
+select sum(amount) from payments left join customers on payments.customerNumber = customers.customerNumber where customers.contactFirstName = 'William' and customers.contactLastName = 'brown' group by payments.paymentDate = '2004%';
+38281.51
+
+
+select contactFirstName, contactLastName FROM customers where salesRepEmployeeNumber != 'null';
+Pirkko	Koskitalo
+Carine 	Schmitt
+Jean	King
+Peter	Ferguson
+Janine 	Labrune
+Jonas 	Bergulfsen
+Susan	Nelson
+Roland	Keitel
+Julie	Murphy
+Kwai	Lee
+Diego 	Freyre
+Christina 	Berglund
+Jytte 	Petersen
+Mary 	Saveley
+Eric	Natividad
+Jeff	Young
+Kelvin	Leong
+Juri	Hashimoto
+Wendy	Victorino
+Veysel	Oeztan
+Keith	Franco
+Martine 	Rancé
+Marie	Bertrand
+Jerry	Tseng
+Julie	King
+Mory	Kentary
+Michael	Frick
+Matti	Karttunen
+Rachel	Ashworth
+Dean	Cassidy
+Leslie	Taylor
+Elizabeth	Devon
+Yoshi 	Tamuri
+Miguel	Barajas
+Julie	Young
+Frédérique 	Citeaux
+Mike	Gao
+Eduardo 	Saavedra
+Mary	Young
+Palle	Ibsen
+Jean 	Fresnière
+Valarie	Thompson
+Helen 	Bennett
+Annette 	Roulet
+Paolo 	Accorti
+Daniel	Da Silva
+Daniel 	Tonini
+Henriette 	Pfalzheim
+Elizabeth 	Lincoln
+Anna	"O'Hara"
+Giovanni 	Rovelli
+Adrian	Huxley
+Marta	Hernandez
+Mihael	Holz
+Jan	Klaeboe
+Catherine 	Dewey
+Steve	Frick
+Wing	Huang
+Julie	Brown
+Mike	Graham
+Ann 	Brown
+William	Brown
+Ben	Calaghan
+Kalle	Suominen
+Francisca	Cervantes
+Jesus	Fernandez
+Brian	Chandler
+Laurence 	Lebihan
+Paul 	Henriot
+Wales	MacKinlay
+Juri	Yoshido
+Dorothy	Young
+Braun	Urs
+Allen	Nelson
+Pascale 	Cartrain
+Georg 	Pipps
+Arnold	Cruz
+Maurizio 	Moroni
+Akiko	Shimamura
+Dominique	Perrier
+Sarah	McRoy
+Michael	Donnermeyer
+Maria	Hernandez
+Dan	Lewis
+Martha	Larsson
+Sue	Frick
+Roland 	Mendel
+Leslie	Murphy
+Yu	Choi
+Martín 	Sommer
+Violeta	Benitez
+Sean	Clenahan
+Franco	Ricotti
+Steve	Thompson
+José Pedro 	Roel
+Rosa	Salazar
+Sue	Taylor
+Thomas 	Smith
+Valarie	Franco
+Tony	Snowden
+
+
+select customers.customerName, offices.addressLine1, offices.city, offices.postalCode, offices.country from customers left join employees on customers.city = offices.city where customers.customerName = ''

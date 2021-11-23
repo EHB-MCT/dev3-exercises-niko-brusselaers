@@ -1,0 +1,18 @@
+select * from products where productCode = 'S24_3856';
+1956 Porsche 356A Coupe
+
+
+select avg(buyPrice) from products;
+54.395182
+
+
+select count(*) from products where productName like "%Ford%";
+15
+
+
+select max(buyPrice),productName from products;
+103.42, 1969 Harley Davidson Ultimate Chopper  
+
+
+select count(*) from products where productLine like 'ships';
+9

@@ -1,0 +1,15 @@
+select count(*) FROM payments where customerNumber like '328';
+2
+
+
+select count(*) from payments left join customers on payments.customerNumber = customers.customerNumber where contactLastName = 'Young' and contactFirstName = 'Julie'
+3
+
+
+select count(*) from customers where country = 'USA' AND creditLimit = 0
+1
+
+
+select customerName, avg(payments.amount) from customers inner join payments on customers.customerNumber = payments.customerNumber GROUP by customers.customerNumber order by avg(payments.amount) desc limit 1
+Collectable Mini Designs Co., 80375.240000
+
