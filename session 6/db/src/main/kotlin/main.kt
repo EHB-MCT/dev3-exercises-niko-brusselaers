@@ -17,4 +17,11 @@ fun main() {
                 credentials.databaseName,
         connectionProps)
 
+    val statement = connection.prepareStatement("SELECT * FROM cities")
+    val result = statement.executeQuery()
+    while (result.next()){
+        val cities = result.getString("city_name")
+        println(cities)
+    }
+
 }
